@@ -49,3 +49,12 @@ wsj_N = nro_tokens_wsj_sin_puntos
 wsj_count_whale = wsj_tokens_sin_puntos.count("whale")
 wsj_MLE_whale = wsj_count_whale/wsj_N
 print("8) Pwsj(\"whale\") = ", wsj_MLE_whale)
+
+#1) Numero de tokens en Moby Dick:  218621
+#2) Numero de TYPES en Moby Dick:  17140
+#3) Type token ratio de Moby Dick:  0.07840051962071347
+#4) Type token ratio del WSJ:  0.129748424801388
+#5) El WSJ tiene mayor diversidad lexica
+#6) ...
+#7) Pmoby_dick("whale") =  0.005607878474620462
+#8) Pwsj("whale") =  0.0
