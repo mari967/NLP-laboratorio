@@ -1,11 +1,9 @@
 import nltk
 from nltk import word_tokenize
 from nltk import re
-
-#nltk.download()
 from nltk.book import *
 
-#Ahora con moby dick >CD
+#-----------------------------Ahora con moby dick
 
 moby_tokens = text1.tokens
 moby_tokens_sin_puntos = [palabra.lower() for palabra in moby_tokens if re.search("\w", palabra)]
@@ -18,10 +16,6 @@ print("2) Numero de TYPES en Moby Dick: ", nro_types)
 #Type token ratio de Moby Dick
 moby_type_token_ratio = nro_types/nro_tokens_sin_puntos
 print("3) Type token ratio de Moby Dick: ", moby_type_token_ratio)
-
-
-
-#0.07840051962071347
 
 #----------------------------Ahora el WSJ
 
@@ -40,9 +34,7 @@ else:
 
 print("6) ...")
 
-#0.129748424801388
-
-#Ahora el MLE
+#----------------------------------Ahora el MLE de Moby Dick
 moby_N = nro_tokens_sin_puntos
 
 moby_count_whale = moby_tokens_sin_puntos.count("whale")
@@ -57,5 +49,3 @@ wsj_N = nro_tokens_wsj_sin_puntos
 wsj_count_whale = wsj_tokens_sin_puntos.count("whale")
 wsj_MLE_whale = wsj_count_whale/wsj_N
 print("8) Pwsj(\"whale\") = ", wsj_MLE_whale)
-#0.0
-
