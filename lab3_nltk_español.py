@@ -1,8 +1,10 @@
 #Steam y stop words del idioma español
 from sklearn.feature_extraction.text import CountVectorizer
-from stop_words import get_stop_words
+#from stop_words import get_stop_words
+from nltk.corpus import stopwords
 
-stop_words_es = get_stop_words('spanish')
+#stop_words_es = get_stop_words('spanish')
+stop_words_es = stopwords.words('spanish')
 vectorizer = CountVectorizer(stop_words = stop_words_es)
 
 import nltk
